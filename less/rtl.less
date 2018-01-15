@@ -1,0 +1,34 @@
+html[data-dir="rtl"] {
+  @import (less) "./bootstrap-flipped.css";
+
+  .home {
+    h4 {
+      text-align: right;
+    }
+  }
+
+  .container {
+    #main-nav {
+      float: right !important;
+    }
+
+    #logged-in-menu, #logged-out-menu {
+      float: left !important;
+    }
+  }
+
+  html[data-dir=rtl] .navbar .dropdown-menu {
+    left: 0;
+    right: auto;
+  }
+
+  .categories > li .card, .category > ul > li .card {
+    border-left: none;
+    border-right: 4px solid #ccc;
+  }
+
+  .categories > li .content .icon, .category > ul > li .content .avatar {
+    margin-left: 15px;
+    margin-right: 0px;
+  }
+}
