@@ -1,7 +1,7 @@
 {
-  "id": "nodebb-theme-community",
+  "id": "nodebb-theme-persona",
   "name": "Community",
   "description": "The community theme for NodeBB",
-  "url": "https://github.com/EffCreativeGroup/nodebb-theme-community",
+  "url": "https://github.com/EffCreativeGroup/nodebb-theme-persona",
   "screenshot": "screenshot.png"
 }

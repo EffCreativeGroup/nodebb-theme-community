@@ -1,12 +1,12 @@
 {
   "bugs": {
-    "url": "https://github.com/EffCreativeGroup/nodebb-theme-community/issues"
+    "url": "https://github.com/EffCreativeGroup/nodebb-theme-persona/issues"
   },
   "dependencies": {
     "string": "^3.3.3"
   },
   "description": "Community theme for NodeBB",
-  "homepage": "https://github.com/EffCreativeGroup/nodebb-theme-community#readme",
+  "homepage": "https://github.com/EffCreativeGroup/nodebb-theme-persona#readme",
   "keywords": [
     "nodebb",
     "theme",
@@ -16,13 +16,13 @@
   ],
   "license": "ICS",
   "main": "theme.less",
-  "name": "nodebb-theme-community",
+  "name": "nodebb-theme-persona",
   "nbbpm": {
     "compatibility": "^1.4.4 || ^1.5.0 || ^1.6.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EffCreativeGroup/nodebb-theme-community.git"
+    "url": "git+https://github.com/EffCreativeGroup/nodebb-theme-persona.git"
   },
   "version": "1.0.0"
 }

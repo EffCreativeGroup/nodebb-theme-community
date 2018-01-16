@@ -5,8 +5,8 @@ NodeBB Community theme
 
 ```
 $ cd /path/to/nodebb/node_modules
-$ git clone https://github.com/EffCreativeGroup/nodebb-theme-community.git
-$ cd nodebb-theme-community
+$ git clone https://github.com/EffCreativeGroup/nodebb-theme-persona.git
+$ cd nodebb-theme-persona
 $ npm i
 # Then start NodeBB and activate the theme via the /admin/appearance/themes page
 ```
@@ -15,12 +15,12 @@ $ npm i
 
 ```
 $ cd /path/to/nodebb/plugins
-$ git clone https://github.com/EffCreativeGroup/nodebb-theme-community.git
-$ cd nodebb-theme-community
+$ git clone https://github.com/EffCreativeGroup/nodebb-theme-persona.git
+$ cd nodebb-theme-persona
 $ npm i
 $ npm link
 $ cd /path/to/nodebb/node_modules
-$ npm link nodebb-theme-community
+$ npm link nodebb-theme-persona
 # Then start/restart NodeBB and activate the theme via the /admin/appearance/themes page
 ```
 
@@ -37,9 +37,9 @@ After ending of all work with theme you must:
 * Remove link from node modules: 
 ```
 cd /path/to/nodebb/node_modules
-npm unlink nodebb-theme-community
+npm unlink nodebb-theme-persona
 ``` 
-* Remove nodebb-theme-community from /path/to/nodebb/plugins dir
+* Remove nodebb-theme-persona from /path/to/nodebb/plugins dir
 * Update community:
 ```
 cd /path/to/nodebb/
@@ -49,4 +49,4 @@ npm upgrade
 ./nodebb build
 ./nodebb start
 ```
-* Change theme of community to Community-Theme via the /admin/appearance/themes page
+* Change theme of community to Persona-Theme via the /admin/appearance/themes page
