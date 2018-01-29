@@ -18,23 +18,25 @@
     <span class="visible-xs pull-right">
       <!-- IF ../teaser.timestampISO -->
       <a class="permalink" href="{../teaser.url}">
-        <small class="timeago" title="{../teaser.timestampISO}"></small>
+        <span class="timeago" title="{../teaser.timestampISO}"></span>
       </a>
       <!-- ENDIF ../teaser.timestampISO -->
     </span>
   </div>
 
   <!-- IF !../link -->
-  <div class="col-md-1 hidden-sm hidden-xs stats">
-    <span class="{../unread-class} human-readable-number" title="{../totalTopicCount}">{../totalTopicCount}</span><br/>
-    <small>[[global:topics]]</small>
-  </div>
-  <div class="col-md-1 hidden-sm hidden-xs stats">
-    <span class="{../unread-class} human-readable-number" title="{../totalPostCount}">{../totalPostCount}</span><br/>
-    <small>[[global:posts]]</small>
+  <div class="category-stats-column">
+    <div class="hidden-sm hidden-xs stats">
+      <small>[[global:topics]]</small>
+      <span class="{../unread-class} human-readable-number" title="{../totalTopicCount}">{../totalTopicCount}</span><br/>
+    </div>
+    <div class="hidden-sm hidden-xs stats">
+      <small>[[global:posts]]</small>
+      <span class="{../unread-class} human-readable-number" title="{../totalPostCount}">{../totalPostCount}</span><br/>
+    </div>
   </div>
   <!-- IF !config.hideCategoryLastPost -->
-  <div class="col-md-3 col-sm-3 teaser hidden-xs" component="topic/teaser">
+  <div class="col-md-3 col-sm-3 teaser hidden-xs topic-teaser" component="topic/teaser">
     <!-- IMPORT partials/categories/lastpost.tpl -->
   </div>
   <!-- ENDIF !config.hideCategoryLastPost -->

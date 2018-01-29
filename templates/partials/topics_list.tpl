@@ -83,17 +83,19 @@
     <a href="{config.relative_path}/topic/{topics.slug}/{topics.teaser.index}"><i class="fa fa-arrow-circle-right"></i></a>
   </div>
 
-  <div class="col-md-1 hidden-sm hidden-xs stats">
-    <span class="human-readable-number" title="{topics.postcount}">{topics.postcount}</span><br/>
-    <small>[[global:posts]]</small>
+  <div class="category-stats-column">
+    <div class="hidden-sm hidden-xs stats">
+      <small>[[global:posts]]</small>
+      <span class="human-readable-number" title="{topics.postcount}">{topics.postcount}</span><br/>
+    </div>
+
+    <div class="hidden-sm hidden-xs stats">
+      <small>[[global:views]]</small>
+      <span class="human-readable-number" title="{topics.viewcount}">{topics.viewcount}</span><br/>
+    </div>
   </div>
 
-  <div class="col-md-1 hidden-sm hidden-xs stats">
-    <span class="human-readable-number" title="{topics.viewcount}">{topics.viewcount}</span><br/>
-    <small>[[global:views]]</small>
-  </div>
-
-  <div class="col-md-3 col-sm-3 teaser hidden-xs" component="topic/teaser">
+  <div class="col-md-3 col-sm-3 teaser hidden-xs topic-teaser" component="topic/teaser">
     <div class="card" style="border-color: {topics.category.bgColor}">
       <!-- IF topics.unreplied -->
       <p>

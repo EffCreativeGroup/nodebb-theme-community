@@ -11,16 +11,20 @@
     </a>
   </div>
 
-  <small class="pull-left">
-    <strong>
-      <a href="<!-- IF posts.user.userslug -->{config.relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->" itemprop="author" data-username="{posts.user.username}" data-uid="{posts.user.uid}">{posts.user.username}</a>
-    </strong>
+  <div class="pull-left flex-column">
+    <small class="pull-left">
+      <strong>
+        <a href="<!-- IF posts.user.userslug -->{config.relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->" itemprop="author" data-username="{posts.user.username}" data-uid="{posts.user.uid}" class="author-link">{posts.user.username}</a>
+      </strong>
 
-    <!-- IMPORT partials/topic/badge.tpl -->
+      <!-- IMPORT partials/topic/badge.tpl -->
 
-    <!-- IF posts.user.banned -->
-    <span class="label label-danger">[[user:banned]]</span>
-    <!-- ENDIF posts.user.banned -->
+      <!-- IF posts.user.banned -->
+      <span class="label label-danger">[[user:banned]]</span>
+      <!-- ENDIF posts.user.banned -->
+      <span class="bookmarked"><i class="fa fa-bookmark-o"></i></span>
+
+    </small>
 
     <div class="visible-xs-inline-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block">
       <a class="permalink" href="{config.relative_path}/post/{posts.pid}"><span class="timeago" title="{posts.timestampISO}"></span></a>
@@ -44,9 +48,7 @@
         <!-- ENDIF posts.user.custom_profile_info.length -->
       </span>
     </div>
-    <span class="bookmarked"><i class="fa fa-bookmark-o"></i></span>
-
-  </small>
+  </div>
 </div>
 
 <br/>

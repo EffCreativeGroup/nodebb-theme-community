@@ -167,13 +167,21 @@
   .pagination-block {
     margin-right: 10px !important;
     margin-left: 10px !important;
-    transition: opacity 250ms ease-in;
-    opacity: 0;
-    pointer-events: none;
+    border-left: 1px solid #d6d7d6;
+    border-right: 1px solid #d6d7d6;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    &.visible-lg,
+    &.visible-md {
+      display: none !important;
+    }
 
     &.ready {
-      opacity: 1;
-      pointer-events: inherit;
+      &.visible-lg,
+      &.visible-md {
+        display: block !important;
+      }
     }
 
     a {

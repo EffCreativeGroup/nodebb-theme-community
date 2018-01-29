@@ -17,6 +17,7 @@
   border: 1px solid transparent;
   white-space: nowrap;
   .button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @border-radius-base);
+  padding: 30px;
   .user-select(none);
 
   &,
@@ -61,6 +62,8 @@
 
 .btn-primary {
   .button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border);
+  font-weight: 700;
+  z-index: 1;
 }
 
 // Success appears as green
@@ -158,5 +161,40 @@ input[type="reset"],
 input[type="button"] {
   &.btn-block {
     width: 100%;
+  }
+}
+
+.btn {
+  &:active,
+  &:focus {
+    background-color: #fff !important;
+    box-shadow: none !important;
+  }
+}
+
+.filters {
+  font-size: 0;
+  .dropdown-toggle {
+    font-size: 14px;
+    border: 1px solid #d6d7d6;
+    padding: 12px 10px !important;
+    width: 176px;
+    font-weight: 700;
+    color: #636466;
+    background-color: #f1f2f2;
+    margin-left: -1px !important;
+    text-align: left;
+
+    .caret {
+      position: absolute;
+      right: 15px;
+      top: 22px;
+    }
+  }
+}
+
+.post-filters {
+  .btn {
+    margin-right: -1px;
   }
 }

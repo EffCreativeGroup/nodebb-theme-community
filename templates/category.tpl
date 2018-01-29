@@ -11,7 +11,7 @@
     <!-- IF children.length -->
     <hr class="hidden-xs"/><!-- ENDIF children.length -->
 
-    <div class="clearfix">
+    <div class="clearflex">
       <!-- IF privileges.topics:create -->
       <a href="{config.relative_path}/compose?cid={cid}" component="category/post" id="new_topic" class="btn btn-primary" data-ajaxify="false" role="button">[[category:new_topic_button]]</a>
       <!-- ELSE -->
@@ -20,7 +20,7 @@
       <!-- ENDIF !loggedIn -->
       <!-- ENDIF privileges.topics:create -->
 
-      <span class="pull-right" component="category/controls">
+      <span class="pull-right filters" component="category/controls">
         <!-- IMPORT partials/category/watch.tpl -->
         <!-- IMPORT partials/category/sort.tpl -->
         <!-- IMPORT partials/category/tools.tpl -->
