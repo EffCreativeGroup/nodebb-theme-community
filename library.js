@@ -13,22 +13,6 @@ library.init = function (params, callback) {
   app.get('/admin/plugins/community', middleware.admin.buildHeader, renderAdmin);
   app.get('/api/admin/plugins/community', renderAdmin);
 
-  app.get('/user/:user/edit', function (req, res) {
-    res.status(404).render('404');
-  });
-  app.get('/account/delete', function (req, res) {
-    res.status(404).render('404');
-  });
-  app.get('/admin/manage/users', function (req, res) {
-    res.status(404).render('404');
-  });
-  app.get('/register', function (req, res) {
-    res.status(404).render('404');
-  });
-  app.get('/reset', function (req, res) {
-    res.status(404).render('404');
-  });
-
   callback();
 };
 
