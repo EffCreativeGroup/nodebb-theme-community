@@ -1,7 +1,7 @@
 <div class="card" style="border-color: {../bgColor}">
   <!-- BEGIN posts -->
   <!-- IF @first -->
-  <div component="category/posts">
+  <div component="category/posts" style="height: 100%">
     <p>
       <a href="{config.relative_path}/user/{../user.userslug}">
         <!-- IF ../user.picture -->
@@ -14,7 +14,7 @@
         <small class="timeago" title="{../timestampISO}"></small>
       </a>
     </p>
-    <div class="post-content">
+    <div class="post-content post-content-lastpost">
       {../content}
     </div>
   </div>
